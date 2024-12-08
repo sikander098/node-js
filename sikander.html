@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+        }
+        .cv-container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .section-content {
+            padding: 10px;
+        }
+        .profile, .education, .skills, .experience {
+            margin-bottom: 15px;
+        }
+        .skills ul, .experience ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 10px;
+        }
+        .education-item h4, .experience-item h4 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .experience-item p, .education-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>John Doe</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Email: john.doe@example.com | Phone: +123-456-7890</p>
+        </div>
+
+        <!-- Profile -->
+        <div class="section">
+            <h3 class="section-title">Profile</h3>
+            <div class="section-content">
+                <p>
+                    A passionate and dedicated full-stack developer with 5+ years of experience in building responsive web applications. 
+                    Proficient in front-end and back-end development, with expertise in modern JavaScript frameworks, REST APIs, and DevOps tools.
+                </p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            <div class="section-content">
+                <div class="education-item">
+                    <h4>Bachelor's in Computer Science</h4>
+                    <p>XYZ University, Graduated: 2019</p>
+                </div>
+                <div class="education-item">
+                    <h4>High School Diploma</h4>
+                    <p>ABC High School, Graduated: 2015</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h3 class="section-title">Skills</h3>
+            <div class="section-content">
+                <ul>
+                    <li>Programming Languages: JavaScript, Python, Java</li>
+                    <li>Frameworks: React, Node.js, Flask</li>
+                    <li>DevOps Tools: Docker, Kubernetes, Jenkins</li>
+                    <li>Cloud Platforms: AWS, Google Cloud, Azure</li>
+                    <li>Database Management: MySQL, MongoDB</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h3 class="section-title">Experience</h3>
+            <div class="section-content">
+                <div class="experience-item">
+                    <h4>Senior Software Developer</h4>
+                    <p>ABC Tech Solutions, 2020 - Present</p>
+                    <ul>
+                        <li>Developed and maintained scalable web applications.</li>
+                        <li>Integrated RESTful APIs and optimized application performance.</li>
+                        <li>Led a team of 5 developers for a flagship e-commerce project.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h4>Junior Developer</h4>
+                    <p>XYZ Digital Solutions, 2019 - 2020</p>
+                    <ul>
+                        <li>Collaborated in front-end and back-end development.</li>
+                        <li>Worked with Docker for containerizing applications.</li>
+                        <li>Assisted in setting up CI/CD pipelines for deployment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
