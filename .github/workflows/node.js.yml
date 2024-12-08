@@ -51,10 +51,13 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
 
-    # Step 9: Build and push the Docker image
+    # Step 9: Build and push Docker image for node1122 with multiple tags
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
       with:
         context: .  # Current directory (where Dockerfile is located)
         push: true   # Push the image to Docker Hub
-        tags: sikander098/nodejs:latest  # Image name and tag
+        tags: |
+          sikander098/node1122:latest  # Tag with "latest"
+          sikander098/node1122:${{ github.sha }}  # Tag with commit hash (unique tag per commit)
+          sikander098/node1122:${{ matrix.node-version }}  # Tag with Node version used in matrix
