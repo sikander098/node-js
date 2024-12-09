@@ -57,4 +57,4 @@ jobs:
       with:
         context: .  # Current directory (where Dockerfile is located)
         push: true   # Push the image to Docker Hub
-        tags: sikander098/nodejs:latest  # Image name and tag
+        tags: sikander098/nodejs:latest  # Image name and tag 
